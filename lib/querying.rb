@@ -26,7 +26,7 @@ end
 def select_series_title_with_most_human_characters
   "SELECT s.title FROM series AS s
   JOIN characters AS c ON s.id = c.series_id
-  GROUP BY s.title HAVING MAX(COUNT(c.id))"
+  GROUP BY s.title "
 end
 
 def select_character_names_and_number_of_books_they_are_in
