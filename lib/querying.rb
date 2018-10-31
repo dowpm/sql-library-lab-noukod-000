@@ -1,5 +1,6 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT b.title, b.year FROM books AS b;
+  "SELECT b.title, b.year FROM books AS b
+  WHERE b.series_id = 1 ORDER BY b.year;
   "
 end
 
