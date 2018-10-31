@@ -40,6 +40,6 @@ def select_character_names_and_number_of_books_they_are_in
   SELECT c.name, COUNT(*) AS n_books
   FROM characters AS c
   JOIN character_books AS cb ON c.id = cb.character_id
-  GROUP BY c.name ORDER BY c.name
+  GROUP BY c.name ORDER BY COUNT(*) DESC
   SQL
 end
