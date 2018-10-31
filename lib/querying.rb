@@ -1,7 +1,6 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT s.title, b.year FROM series AS s
-  JOIN books AS b ON s.id = b.series_id
-  ;"
+  "SELECT b.title, b.year FROM books AS b;
+  "
 end
 
 def select_name_and_motto_of_char_with_longest_motto
