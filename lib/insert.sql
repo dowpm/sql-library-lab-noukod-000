@@ -1,4 +1,4 @@
-INSERT INTO series (title, author_id, subgenre_id) VALUES ("BlackList",1,1) ("Fringe",2,2);
+INSERT INTO series (title, author_id, subgenre_id) VALUES ("BlackList",1,1), ("Fringe",2,2);
 
 INSERT INTO subgenres (name) VALUES ("hero"), ("science");
 
