@@ -25,12 +25,12 @@ end
 
 def select_series_title_with_most_human_characters
   <<-SQL
-  SELECT s.title, COUNT(*) FROM series AS s
+  SELECT s.title FROM series AS s
   JOIN books AS b ON s.id = b.series_id
   JOIN character_books AS cb ON b.id = cb.book_id
   JOIN characters AS c ON cb.character_id = c.id
   WHERE c.species = 'human'
-  GROUP BY s.title;
+  GROUP BY s.title ORDER COUNT(*);
   SQL
 end
 
