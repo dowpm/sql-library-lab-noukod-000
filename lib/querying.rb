@@ -1,11 +1,10 @@
 def select_books_titles_and_years_in_first_series_order_by_year
   "SELECT b.title, b.year FROM books AS b
-  WHERE b.series_id = 1 ORDER BY b.year;
-  "
+  WHERE b.series_id = 1 ORDER BY b.year;"
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "Write your SQL query here"
+  "SELECT c.name, c.moto FROM characters AS c;"
 end
 
 
