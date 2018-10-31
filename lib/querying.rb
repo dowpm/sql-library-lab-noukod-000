@@ -24,7 +24,7 @@ def select_name_and_series_subgenres_of_authors
 end
 
 def select_series_title_with_most_human_characters
-  <<-SQL 
+  <<-SQL
   SELECT s.title, COUNT(*) FROM series AS s
   JOIN books AS b ON s.id = b.series_id
   JOIN character_books AS cb ON b.id = cb.book_id
