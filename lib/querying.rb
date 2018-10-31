@@ -30,7 +30,7 @@ def select_series_title_with_most_human_characters
   JOIN character_books AS cb ON b.id = cb.book_id
   JOIN characters AS c ON cb.character_id = c.id
   WHERE c.species = 'human'
-  GROUP BY s.title ORDER COUNT(*);
+  GROUP BY s.title ORDER BY COUNT(*);
   SQL
 end
 
